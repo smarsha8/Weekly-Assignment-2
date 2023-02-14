@@ -38,6 +38,7 @@ Partial Class frmBurgers
         'lblHeading
         '
         Me.lblHeading.Font = New System.Drawing.Font("Tahoma", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHeading.ForeColor = System.Drawing.Color.Red
         Me.lblHeading.Location = New System.Drawing.Point(260, 9)
         Me.lblHeading.MaximumSize = New System.Drawing.Size(305, 33)
         Me.lblHeading.Name = "lblHeading"
@@ -47,34 +48,41 @@ Partial Class frmBurgers
         '
         'btnPrime
         '
+        Me.btnPrime.BackColor = System.Drawing.Color.Wheat
+        Me.btnPrime.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPrime.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnPrime.Location = New System.Drawing.Point(117, 347)
         Me.btnPrime.Name = "btnPrime"
         Me.btnPrime.Size = New System.Drawing.Size(128, 35)
         Me.btnPrime.TabIndex = 3
         Me.btnPrime.Text = "Prime Beef"
-        Me.btnPrime.UseVisualStyleBackColor = True
+        Me.btnPrime.UseVisualStyleBackColor = False
         '
         'btnSelectMeal
         '
+        Me.btnSelectMeal.BackColor = System.Drawing.Color.Wheat
+        Me.btnSelectMeal.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSelectMeal.Location = New System.Drawing.Point(353, 347)
         Me.btnSelectMeal.Name = "btnSelectMeal"
         Me.btnSelectMeal.Size = New System.Drawing.Size(128, 35)
         Me.btnSelectMeal.TabIndex = 4
-        Me.btnSelectMeal.Text = "Slelect Meal"
-        Me.btnSelectMeal.UseVisualStyleBackColor = True
+        Me.btnSelectMeal.Text = "Select Meal"
+        Me.btnSelectMeal.UseVisualStyleBackColor = False
         '
         'btnVeggie
         '
+        Me.btnVeggie.BackColor = System.Drawing.Color.Wheat
+        Me.btnVeggie.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnVeggie.Location = New System.Drawing.Point(584, 347)
         Me.btnVeggie.Name = "btnVeggie"
         Me.btnVeggie.Size = New System.Drawing.Size(128, 35)
         Me.btnVeggie.TabIndex = 5
         Me.btnVeggie.Text = "Veggie"
-        Me.btnVeggie.UseVisualStyleBackColor = True
+        Me.btnVeggie.UseVisualStyleBackColor = False
         '
         'lblInstructions
         '
-        Me.lblInstructions.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblInstructions.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblInstructions.Location = New System.Drawing.Point(233, 397)
         Me.lblInstructions.Name = "lblInstructions"
         Me.lblInstructions.Size = New System.Drawing.Size(360, 18)
@@ -83,24 +91,29 @@ Partial Class frmBurgers
         '
         'lblConfirmation
         '
-        Me.lblConfirmation.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblConfirmation.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblConfirmation.Location = New System.Drawing.Point(309, 447)
         Me.lblConfirmation.Name = "lblConfirmation"
         Me.lblConfirmation.Size = New System.Drawing.Size(172, 18)
         Me.lblConfirmation.TabIndex = 7
         Me.lblConfirmation.Text = "Enjoy your burger special"
+        Me.lblConfirmation.Visible = False
         '
         'btnExit
         '
+        Me.btnExit.BackColor = System.Drawing.Color.Wheat
+        Me.btnExit.Enabled = False
+        Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.Location = New System.Drawing.Point(353, 482)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(128, 35)
         Me.btnExit.TabIndex = 8
         Me.btnExit.Text = "Exit Window"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnExit.UseVisualStyleBackColor = False
         '
         'picVeggie
         '
+        Me.picVeggie.Enabled = False
         Me.picVeggie.Image = Global.Weekly_Assignment_2.My.Resources.Resources.veggie
         Me.picVeggie.Location = New System.Drawing.Point(539, 61)
         Me.picVeggie.Name = "picVeggie"
@@ -108,22 +121,26 @@ Partial Class frmBurgers
         Me.picVeggie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picVeggie.TabIndex = 2
         Me.picVeggie.TabStop = False
+        Me.picVeggie.Visible = False
         '
         'picPrime
         '
+        Me.picPrime.Enabled = False
         Me.picPrime.ErrorImage = Nothing
         Me.picPrime.Image = Global.Weekly_Assignment_2.My.Resources.Resources.prime
-        Me.picPrime.Location = New System.Drawing.Point(-5, 61)
+        Me.picPrime.Location = New System.Drawing.Point(-4, 61)
         Me.picPrime.Name = "picPrime"
         Me.picPrime.Size = New System.Drawing.Size(260, 250)
         Me.picPrime.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picPrime.TabIndex = 1
         Me.picPrime.TabStop = False
+        Me.picPrime.Visible = False
         '
         'frmBurgers
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FloralWhite
         Me.ClientSize = New System.Drawing.Size(784, 551)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.lblConfirmation)
@@ -134,6 +151,7 @@ Partial Class frmBurgers
         Me.Controls.Add(Me.picVeggie)
         Me.Controls.Add(Me.picPrime)
         Me.Controls.Add(Me.lblHeading)
+        Me.Enabled = False
         Me.Name = "frmBurgers"
         Me.Text = "Burger Specials"
         CType(Me.picVeggie, System.ComponentModel.ISupportInitialize).EndInit()
